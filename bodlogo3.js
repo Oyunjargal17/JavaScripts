@@ -100,3 +100,6 @@
 // }
 
 // console.log("Bodlogo 7 hariu ni =", urjwer7);
+// const day2=4;
+// const tsag2= 40;
+// let hour2= day2 * 24;
