@@ -103,3 +103,37 @@
 
 //7. Массивын сүүлийн элементийг авах
 //lastItem(arr) — массивын хамгийн сүүлийн элемент.
+
+// const numbers=[45,36,78,99,101,67,99,85];
+// function lastItem(arr)
+// {
+//   let lastnumber=0;
+//   for(let i=arr.length-1; i>=0; i--)
+//   {
+    
+//     if(i===arr.length-1)
+//     {
+//       lastnumber=arr[arr.length-1];
+//     }
+    
+//   }
+//   console.log(lastnumber);
+// }
+// lastItem(numbers);
+
+//9. Богино үгийг олох
+//shortestWord(str) — өгүүлбэрт байгаа хамгийн богино үгийг буцаа.
+// const string="uguulbert baigaa";
+// function shortestWord(str)
+// {
+// for(let i=0; i<=string.length; i++)
+// {
+//   let sulZai=0;
+//   if(sulZai===" ")
+//   {
+//     let ug= 
+//   }
+//   console.log(i);
+// }
+// }
+// shortestWord(string);
