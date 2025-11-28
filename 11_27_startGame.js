@@ -2,33 +2,42 @@
 // харьцуулж тэнцсэн тохиолдолд ялсан тэнцээгүй бол ялагдсан
 // гэж хэвлэх жижиг тоглоом хийнэ.
 // Мөн таны тэддэхь удаагийн оролдого гэснийг гаргаж ирнэ.
-// const randomNumber = Math.floor(Math.random() * 10);
-// console.log(`Нууц тоо: ${randomNumber}`);
-// let isDone = true;
-// let counter = 0;
-// if (counter === 5) {
-//   console.log(`Tanii oroldlogo ${counter} udaagiin oroldlogoos ih bolloo `);
-// }
-// while (isDone) {
-//   counter++;
 
-//   const value = prompt("Та тоогоо оруулна уу?");
-//   let values = Number(value);
-//   console.log(`Tanii ${counter} udaagiin oroldlogo`);
-//   if (values === 0) break;
-//   if (randomNumber === values) {
-//     console.log("Баяр хүргэе 👏. Та хожлоо 🎉");
-//     isDone = false;
-//   } else if (randomNumber > values) {
-//     console.log("Таны оруулсан тоо нууц тооноос бага байна");
-//     isDone = true;
-//   } else {
-//     console.log("Таны оруулсан утга нууц тооноос их байна");
-//     isDone = true;
-//   }
-//   console.log("attempt: ",attemps)
-// }
+const randomNumber = Math.floor(Math.random() * 10 + 1);
+// const randomNumber = 1;
+let value = 0;
+let counter = 1;
 
-// const value = prompt("Ta toogoo oruulna uu?");
-// constrandomNumber
-// console.log(value);
+// console.log(randomNumber);
+while (counter <= 5) {
+  value = prompt("Ta toogoo oruulna uu?");
+
+  const sulZai = value.trim();
+  if (sulZai === "") {
+    console.log("Ta hooson utga bolon zai awahgui baih");
+    continue;
+  }
+
+  const values = Number(value);
+  if (isNaN(values)) {
+    console.log("Ta zowhon too oruulna uu?");
+    continue;
+  }
+  if (value <= 0) {
+    console.log("Ta surug utga oruulahgui baina uu?");
+    continue;
+  }
+
+  let udaa = counter++;
+  console.log(`tanii ${udaa}-iin oroldlogo:`);
+  if (randomNumber === values) {
+    console.log("Баяр хүргэе 👏. Та хожлоо 🎉");
+    break;
+  } else if (randomNumber > values) {
+    console.log("Tanii oruulsan utgaas ih baina!");
+    continue;
+  } else if (randomNumber < values) {
+    console.log("Tanii oruulsan utgaas baga baina!");
+    continue;
+  }
+}
