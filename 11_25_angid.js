@@ -125,30 +125,32 @@
 //countOccurrences(arr, item)
 //Массивд item хэд байгаа тоолоор буцаа.
 
-const numbers = [10, 20, 30, 20, 50, 20];
-function countOccurrences(arr, item) {
-  let too = 0;
-  for (let i = 0; i < arr.length; i++) {
-    let utga = arr[i];
-    if (utga === item) {
-      too++;
-    }
-  }
-  console.log(item + " ni " + too + " udaa dawtagdsan");
-}
-countOccurrences(numbers, 20);
+// const numbers = [10, 20, 30, 20, 50, 20, 40, 20, 20];
+// function countOccurrences(arr, item) {
+//   let too = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     let utga = arr[i];
+//     if (utga === item) {
+//       too++;
+//     }
+//   }
+//   console.log(item + " ni " + too + " udaa dawtagdsan");
+// }
+// countOccurrences(numbers, 20);
 
 //9. Богино үгийг олох
 //shortestWord(str) — өгүүлбэрт байгаа хамгийн богино үгийг буцаа.
-// const string = "uguulbert baigaa hamgiin bogino ugiig oloh";
-// function shortestWord(str) {
-//   const = [];
-
-//   for (let i = 0; i <= string.length; i++) {
-//     let sulZai = 0;
-//     if (sulZai === " ") {
-//     }
-//     console.log(i);
-//   }
-// }
-// shortestWord(string);
+const string = "bi bol mongol";
+function shortestWord(str) {
+  const splitedStr = str.split(" ");
+  console.log(splitedStr);
+  let shortWord = "";
+  for (let i = 0; i <= string.length; i++) {
+    let word = str[i];
+    shortWord = word;
+    if (shortWord > word) {
+      console.log(shortWord);
+    }
+  }
+}
+shortestWord(string);
