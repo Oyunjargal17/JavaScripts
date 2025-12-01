@@ -2,13 +2,14 @@
 // харьцуулж тэнцсэн тохиолдолд ялсан тэнцээгүй бол ялагдсан
 // гэж хэвлэх жижиг тоглоом хийнэ.
 // Мөн таны тэддэхь удаагийн оролдого гэснийг гаргаж ирнэ.
+const submitBtn = document.getElementById("submit-btn");
 const input = document.getElementById("input");
 const randomNumber = Math.floor(Math.random() * 10 + 1);
 console.log(randomNumber);
 let counter = 0;
 function start() {
-  counter++;
   let value = 0;
+  counter++;
 
   // console.log(randomNumber);
   // while (counter <= 5) {
@@ -39,10 +40,10 @@ function start() {
   } else if (randomNumber < input.value) {
     text.innerHTML = "Tanii oruulsan utgaas baga baina!";
   }
-  if (counter === 5) {
-    text.innerHTML = "Tanii too oruulah oroldlogo duuslaa";
-  }
-
   input.value = "";
+  if (counter == 5) {
+    text.innerHTML = "Tanii too oruulah oroldlogo duuslaa";
+    submitBtn.disabled = true;
+  }
 }
 // }
