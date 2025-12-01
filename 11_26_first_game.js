@@ -1,49 +1,48 @@
-//гараас тоо аваад, 1-ээс их бол их байна, бага бол бага байна, 1 бол та хожлоо, 0 бол буруу утга байна
-//та дахин оруулна уу гэдэг жижиг тоглоом зохио
-// const value = prompt("Ta toogoo oruulna uu?");
-// const randomValue = 1;
-// const hur = Number(value);
-// // console.log(hur);
+//Гараас тоо оруулахад цаанаас ирж байгаа random тоотой
+// харьцуулж тэнцсэн тохиолдолд ялсан тэнцээгүй бол ялагдсан
+// гэж хэвлэх жижиг тоглоом хийнэ.
+// Мөн таны тэддэхь удаагийн оролдого гэснийг гаргаж ирнэ.
+const input = document.getElementById("input");
+const randomNumber = Math.floor(Math.random() * 10 + 1);
+console.log(randomNumber);
+let counter = 0;
+function start() {
+  counter++;
+  let value = 0;
 
-// if (hur === randomValue) {
-//   console.log("Bayr hurgey! Ta hojloo", "👏");
-// } else if (hur > randomValue) {
-//   console.log("Ikh baina!");
-// } else if (hur < randomValue && hur !== 0) {
-//   console.log("Baga baina!");
-// } else if (hur === 0) {
-//   console.log("Ta dahin utga oruulna uu?");
+  // console.log(randomNumber);
+  // while (counter <= 5) {
+  // value = prompt("Ta toogoo oruulna uu?");
+
+  //   const sulZai = value.trim();
+  //   if (sulZai === "") {
+  //     console.log("Ta hooson utga bolon zai awahgui baih");
+  //     continue;
+  //   }
+
+  // const values = Number(value);
+  // if (isNaN(values)) {
+  //   console.log("Ta zowhon too oruulna uu?");
+  //   continue;
+  // }
+  // if (value <= 0) {
+  //   console.log("Ta surug utga oruulahgui baina uu?");
+  //   continue;
+  // }
+
+  // let udaa = counter++;
+  // console.log(`tanii ${udaa}-iin oroldlogo:`);
+  if (randomNumber == input.value) {
+    text.innerHTML = "Баяр хүргэе 👏. Та хожлоо 🎉";
+  } else if (randomNumber > input.value) {
+    text.innerHTML = "Tanii oruulsan utgaas ih baina!";
+  } else if (randomNumber < input.value) {
+    text.innerHTML = "Tanii oruulsan utgaas baga baina!";
+  }
+  if (counter === 5) {
+    text.innerHTML = "Tanii too oruulah oroldlogo duuslaa";
+  }
+
+  input.value = "";
+}
 // }
-
-// console.log(Math.floor(Math.random()*10)+1);
-
-// const randomNumber = 1;
-// let isCorrect = false;
-// let attemps = 0;
-// let nums = [];
-
-// while (!isCorrect) {
-//   const value = prompt("Toogoo oruulna uu?");
-//   attemps += value;
-//   nums = push(attemps);
-//   console.log(nums);
-//   const hurwuulsen = Number(value);
-
-//   if (hurwuulsen === randomNumber) {
-//     isCorrect = true;
-//     console.log("Bayr hurgey! Ta hojloo");
-//   } else if (hurwuulsen > randomNumber) {
-//     console.log("Ikh baina!");
-//   } else if (hurwuulsen < randomNumber) {
-//     console.log("Baga baina");
-//   }
-// }
-
-// else if (hurwuulsen === 0) {
-//   console.log("Ta dahin utga oruulna uu?");
-// }
-
-// user-iin too - 1
-// random too - 2
-
-// isCorret = false

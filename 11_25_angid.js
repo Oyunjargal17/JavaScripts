@@ -140,34 +140,18 @@
 
 //9. Богино үгийг олох
 //shortestWord(str) — өгүүлбэрт байгаа хамгийн богино үгийг буцаа.
-// const string = "bi bol mongol hun shuu hu d dee";
+// const string = "bi bol mongol";
 // function shortestWord(str) {
-//   const words = str.split(" ");
-//   let shortWord = words[0];
-//   for (let i = 1; i < words.length; i++) {
-//     const currentWord = words[i];
-//     if (currentWord.length < shortWord.length) {
-//       shortWord = currentWord;
-//     }
-//   }
-//   return shortWord;
+//   const splitedStr = str.split(" ");
+//   console.log(splitedStr);
+//   let shortWord = "";
+//   for (let i = 0; i <= string.length; i++) {
+//     let word = str[i];
+//     shortWord = word;
+//     console.log(shortWord);
+// if (shortWord > word) {
+//   console.log(shortWord);
 // }
-// const result = shortestWord(string);
-// console.log(result);
-
-//10. Массив дахь давхардсан элементийн жагсаалт гаргах
-//findDuplicates(arr)
-//Жишээ:
-//[1,2,3,2,4,1] → [1,2]
-const numbers = [1, 2, 3, 2, 4, 1];
-function findDuplicates(arr) {
-  let duplicate = [];
-  const obj = {};
-  for (let i = 0; i < arr.length; i++) {
-    const nums = numbers[i];
-    if (!obj[nums]) {
-      console.log(nums);
-    }
-  }
-}
-findDuplicates(numbers);
+//   }
+// }
+// shortestWord(string);
