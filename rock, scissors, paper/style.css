@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.choices {
+  width: fit-content;
+  margin: 0 auto;
+
+  display: flex;
+  gap: 20px;
+}
+.choices button {
+  border: none;
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#reset {
+  display: none;
+}
+
+/* .reset-btn-hidden {
+  display: none;
+}
+
+.reset-btn-block {
+  display: none;
+} */
