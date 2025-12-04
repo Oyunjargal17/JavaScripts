@@ -8,23 +8,52 @@
   </head>
 
   <body>
-    <div class="background"></div>
+    <div class="background">
+      <div class="flex">
+        <h1 class="game-title">Rock Paper Scissors with Compose</h1>
+      </div>
 
-    <h1>Rock-scissors-paper</h1>
+      <h3 class="reset-text">RESET THE TOUR</h3>
+      <div class="flex gap200">
+        <p class="player-score-name">PLAYER SCORE</p>
+        <p class="computer-score-name">COMPUTER SCORE</p>
+      </div>
+      <div>
+        <div class="flex gap400">
+          <h1 id="user-score" class="player-score">0</h1>
+          <h1 id="bot-score" class="computer-score">0</h1>
+        </div>
+        <div class="center">
+          <img
+            id="vs-img"
+            class="image"
+            src="./image/vs-zurag.png"
+            alt="vs-zurag"
+          />
+        </div>
+        <div>
+          <div class="center">
+            <h1 id="user-win"></h1>
+            <h1 id="bot-win"></h1>
+            <div class="center">
+              <button id="reset" onclick="resetGame()">PLAY AGAIN!</button>
+            </div>
+          </div>
+        </div>
 
-    <div class="choices">
-      <button id="rock" onclick="turn('rock')">🪨</button>
-      <button id="scissors" onclick="turn('scissors')">✂️</button>
-      <button id="paper" onclick="turn('paper')">📄</button>
-    </div>
-    <div>
-      <h1>User:</h1>
-      <h1 id="user-score">0</h1>
-      <h1 id="user-win"></h1>
-      <h1>Computer:</h1>
-      <h1 id="bot-score">0</h1>
-      <h1 id="bot-win"></h1>
-      <button id="reset" onclick="resetGame()">play again!</button>
+        <div></div>
+      </div>
+      <div class="flex gap50">
+        <button id="main-rock" onclick="turn('rock')" class="game-btn">
+          ROCK
+        </button>
+        <button id="main-paper" onclick="turn('paper')" class="game-btn">
+          RAPER
+        </button>
+        <button id="main-scissors" onclick="turn('scissors')" class="game-btn">
+          SCISSORS
+        </button>
+      </div>
     </div>
 
     <script src="./script.js"></script>
