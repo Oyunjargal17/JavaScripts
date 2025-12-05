@@ -88,47 +88,63 @@
 
 // //8. Өгөгдсөн string төрлийн массив дотроос хамгийн урт үгийг ол.
 
-const words = ["hello", "world", "typescript", "js", "a", "123456789010"];
-const newWords = words.map((word) => {
-  const letters = word.split("");
-  //   console.log(letters);
-});
+// const words = ["hello", "world", "typescript", "js"];
+// const newWords = words.map((word) => {
+//   const letters = word.split("");
+//   //   console.log(letters);
+// });
 
-const max = words.reduce((acc, word) => {
-  if (acc.length > word.length) {
-    return (acc = acc);
-  } else {
-    return (acc = word);
-  }
-}, " ");
-console.log(max);
-
-// console.log(newWords);
-
+// const max = words.reduce((acc, word) => {
+//   if (acc.length > word.length) {
+//     return (acc = acc);
+//   } else {
+//     return (acc = word);
+//   }
+// }, " ");
+// console.log(max);
 // Output: 'typescript'
 
-// Доорх массивын бүх элементүүдийн үсгийн нийлбэрийг ол
+// 9. Доорх массивын бүх элементүүдийн үсгийн нийлбэрийг ол
 
 // const words = ["hi", "hello", "hey"];
-
+// const newWords = words.map((word) => {
+//   const letters = word.split("");
+//   console.log(letters);
+// });
+// const sum = words.reduce((accum, word) => {
+//   return (accum += word.length);
+// }, 0);
+// console.log(sum);
 // // Output: 10
 
-// // Хамгийн үнэтэй бүтээгдэхүүнийг харуул
-
+// //10. Хамгийн үнэтэй бүтээгдэхүүнийг харуул
 // const products = [
-//   { name: "Laptop", price: 900 },
 //   { name: "Phone", price: 700 },
+//   { name: "Phone", price: 1600 },
+//   { name: "Phone", price: 1000 },
 //   { name: "Monitor", price: 300 },
+//   { name: "Laptop", price: 900 },
 // ];
+// const expensive = products.reduce((accum, product) => {
+//   if (accum.price > product.price) {
+//     return accum;
+//   } else {
+//     return product;
+//   }
+// }, products[0]);
+// console.log(expensive);
+// // Output: { name: "Phone", price: 1600 }
 
-// // Output: { name: 'Laptop', price: 900 }
-
-// // бүх бүтээгдэхүүний нийлбэр үнийн дүнг ол
+// //11. Бүх бүтээгдэхүүний нийлбэр үнийн дүнг ол
 
 // const items = [
 //   { name: "Chair", price: 80 },
 //   { name: "Desk", price: 120 },
 //   { name: "Lamp", price: 150 },
 // ];
+// const sum = items.reduce((accum, item) => {
+//   return accum + item.price;
+// }, 0);
+// console.log(sum);
 
 // // Output total: 270
