@@ -1,5 +1,4 @@
-// filter+map+reduce
-// // filter + map
+//============================filter+map==========================================
 
 // //1.  People array-аас 18 ба түүнээс дээш настай хүмүүсийн нэрийг шүүж гарга.
 // const peoples = [
@@ -48,29 +47,31 @@
 
 // //6. хамгийн өндөр оноотой 3 дүнгээр нь массив үүсгэ.
 
-// const students = [
-//   { name: "A", score: 88 },
-//   { name: "B", score: 95 },
-//   { name: "C", score: 72 },
-//   { name: "D", score: 99 },
-//   { name: "E", score: 91 },
-// ];
-// let top3Student = [{ name: "", score: 0 }];
-// for (let i = 0; i < students.length; i++) {
-//   const student = students[i];
-//   //   console.log(student);
-//   if (top3Student[0].score < student.score) {
-//     top3Student[1] = top3Student[0];
-//     top3Student[0] = student;
-//     console.log(top3Student);
-//   } else {
-//     top3Student[2] = top3Student[1];
-//     top3Student[1] = student;
-//   }
-//   console.log(top3Student);
-// }
+const students = [
+  { name: "A", score: 88 },
+  { name: "B", score: 95 },
+  { name: "C", score: 72 },
+  { name: "D", score: 99 },
+  { name: "E", score: 91 },
+];
+const maxScore = students.filter((student) => {});
+let top3Student = [{ name: "", score: 0 }];
+for (let i = 0; i < students.length; i++) {
+  const student = students[i];
+  //   console.log(student);
+  if (top3Student[0].score < student.score) {
+    top3Student[1] = top3Student[0];
+    top3Student[0] = student;
+    console.log(top3Student);
+  } else {
+    top3Student[2] = top3Student[1];
+    top3Student[1] = student;
+  }
+  console.log(top3Student);
+}
 // // Output: ['D', 'B', 'E']
-// // reduce
+
+//=========================reduce=======================================
 
 // //7. cart дахь бүх бараануудын үнийн дүнгийн нийлбэрийг ол
 // const cart = [
